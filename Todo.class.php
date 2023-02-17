@@ -18,9 +18,15 @@ class Todo{
         }
     }
     //add todo
+    
 
     //get thing
+    public function getTodo () : array {
+        $sql = "SELECT * FROM todo ORDER BY date";
+        $result = $this->db->query($sql);
 
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    }
 
     //destructor
 }

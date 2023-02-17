@@ -11,9 +11,10 @@ spl_autoload_register(function ($class_name) {
 });
 
 
-//Definera databaser
+/* //Definera databaser
 define("DBHOST", "localhost");
 define("DBUSER", "root");
 define("DBPASS", "root");
 define("DBDATABASE", "tododb");
 
+ */
