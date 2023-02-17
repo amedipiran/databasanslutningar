@@ -13,7 +13,7 @@ spl_autoload_register(function ($class_name) {
 
 //Definera databaser
 define("DBHOST", "localhost");
-define("DBUSER", "administrator");
-define("DBPASS", "password");
+define("DBUSER", "root");
+define("DBPASS", "root");
 define("DBDATABASE", "tododb");
 
