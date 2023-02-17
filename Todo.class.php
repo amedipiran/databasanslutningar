@@ -28,7 +28,18 @@ class Todo{
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
+    //Delete todo
+    public function deleteTodo(int $todoId) : bool {
+        $todoId = intval($todoId);
+        $sql = "DELETE FROM todo WHERE id =$todoId";
+        $result = $this->db->query($sql);
+        return $result;
+    }
+
     //destructor
+    public function __destruct() {
+        mysqli_close($this->db);
+    }
 }
 
 
