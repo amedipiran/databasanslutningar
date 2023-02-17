@@ -12,7 +12,16 @@
         <h1>Att göra-lista</h1>
     </header>
 
-    <div class='container'></div>
+    <div class='container'>
+    <form method='POST'>
+        <label for="todo">Att Göra:</label>
+        <br>
+        <input type="text" name='todo' id='todo'>
+        <button type='submit'>Lägg till</button>
+    </form>
+
+
+    </div>
     
 </body>
 </html>
