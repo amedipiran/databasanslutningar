@@ -12,7 +12,10 @@ class Todo{
 
     //constructor
     function __constructor() {
-        
+        $this->db = new mysqli('localhost', 'root', 'root', 'tododb');
+        if ($this->db->connect_errno > 0) {
+            die('fel vid anslutning: ' . $this->db->connect_errno);
+        }
     }
     //add todo
 
